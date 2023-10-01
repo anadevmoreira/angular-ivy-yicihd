@@ -1,0 +1,15 @@
+<!--Two Way Bindind Tradicional -->
+
+<input
+  type="text"
+  [value]="placeholder"
+  (input)="placeholder = $any($event.target).value"
+/><!-- property binding e event-->
+<p>{{ placeholder }}</p>
+<!--interpolação -->
+
+<!-- Two Way Binding no ngModel -->
+<input type="text"
+[(ngModel)]="placepass" />
+
+<p [style.color]="color">{{ placepass }}</p>
